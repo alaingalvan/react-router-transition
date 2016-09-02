@@ -1,7 +1,23 @@
-.DS_Store
-*.swp
-
-lib
-/demos/**/index.js
-
+# Dependency directory
 node_modules
+
+# Editors
+.vscode
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.ssh
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+src/*.js

@@ -2,6 +2,8 @@
 
 A simple component for easily declaring mounting and unmounting transitions. Built for `react-router`, powered by `react-motion`. [Some demos](http://maisano.github.io/react-router-transition/demos/#/fade)
 
+> A fork of @maisano's react package, ported over to TypeScript 2.0. 
+
 ```jsx
 import { RouteTransition } from 'react-router-transition';
 
