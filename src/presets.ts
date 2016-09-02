@@ -1,4 +1,4 @@
-import { spring } from 'react-motion';
+import { spring, OpaqueConfig } from 'react-motion';
 
 const fadeConfig = { stiffness: 200, damping: 22 };
 const popConfig = { stiffness: 360, damping: 25 };

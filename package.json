@@ -4,12 +4,13 @@
   "description": "A thin layer over react-motion for animating routes in react-router.",
   "main": "lib/react-router-transition.js",
   "scripts": {
+    "tsc": "tsc -d",
+    "declaration": "dts-bundle --name react-router-transition --main src/index.d.ts --out lib/react-router-transition.d.ts",
     "build": "webpack",
     "build:demos": "webpack --config webpack.demos.config.js",
     "watch:demos": "webpack --config webpack.demos.config.js --watch",
     "start:demos": "webpack-dev-server --config webpack.demos.config.js",
-    "prerelease": "rm -fr lib && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prerelease": "rm -fr lib && npm run build"
   },
   "repository": {
     "type": "git",
@@ -36,12 +37,15 @@
   },
   "homepage": "https://github.com/maisano/react-router-transition#readme",
   "peerDependencies": {
-    "react": ">=0.13.2 || ^0.14"
+    "react": ">=0.15"
   },
   "dependencies": {
     "react-motion": "^0.4.4"
   },
   "devDependencies": {
+    "@types/react": "^0.14.33",
+    "@types/react-motion": "0.0.19",
+    "dts-bundle": "^0.5.0",
     "history": "^2.0.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
@@ -49,6 +53,9 @@
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.2",
     "webpack": "^2.1.0-beta.21",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^2.1.0-beta.2"
+  },
+  "typescript": {
+    "definition": "lib/react-router-transition.d.ts"
   }
 }

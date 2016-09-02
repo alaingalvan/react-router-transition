@@ -21,3 +21,5 @@ pids
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 src/*.js
+src/*.d.ts
+src/*.map

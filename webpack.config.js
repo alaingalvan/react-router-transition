@@ -6,7 +6,7 @@ var src = path.join(__dirname, 'src');
 
 module.exports = {
   devtool: 'sourcemap',
-  entry: path.join(src, 'index.js'),
+  entry: path.join(src, 'index.ts'),
   externals: [{
     react: {
       root: 'React',
@@ -24,16 +24,13 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
-      loader: 'babel',
+      test: /\.tsx?$/,
+      loader: 'ts-loader',
       include: src
     }]
   },
   resolve: {
     root: src,
-    extensions: ['', '.js', '.jsx']
-  },
-  eslint: {
-    configFile: '.eslintrc'
+    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
   }
 };
